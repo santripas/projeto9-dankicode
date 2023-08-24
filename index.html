@@ -4,14 +4,22 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width;initial-scale=1.0;maximum-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link href="css/style.css" rel="stylesheet">
 	<title>Monguilhott</title>
 </head>
 <body>
+	<ul class="nav-desktop">
+		<li><span></span><a href="">Invisalign</a></li>
+		<li><span></span><a href="">Benefícios</a></li>
+		<li><span></span><a href="">Serve para mim?</a></li>
+		<li><span></span><a href="">Contato</a></li>
+	</ul>
 	<section class="header-master">
 		<header>
 			<div class="container">
 				<div class="logo"></div><!--logo-->
+
 				<nav class="desktop">
 					<ul>
 						<li class="selected"><span></span><a href="">Invisalign</a></li>
@@ -19,7 +27,13 @@
 						<li><span></span><a href="">Serve para mim?</a></li>
 						<li><span></span><a href="">Contato</a></li>
 					</ul>
-				</nav>
+				</nav><!--desktop-->
+
+				<nav class="mobile">
+					<h3><i class="fa fa-bars"></i></h3>
+					
+				</nav><!--mobile-->
+
 				<div class="telefone-header">
 					<span>(33) 3333-3333</span>
 				</div><!--telefone-->
@@ -198,12 +212,117 @@
 		</div><!--container-->
 	</section><!--etapas-->
 
+	<section class="diferencas">
+		<div class="container">
+			<div class="diferencas__single" style="border-right: 1px solid #646464;">
+				<h2>Tradicional</h2>
+				<div class="item-diferenca-1">
+					<div class="line-diferencas-1"></div>
+					<span>Aparelho fixo</span>
+				</div>
+				<div></div>
+				<div class="item-diferenca-1">
+					<div class="line-diferencas-1"></div>
+					<span>Aparelho fixo</span>
+				</div>
+				<div></div>
+				<div class="item-diferenca-1">
+					<div class="line-diferencas-1"></div>
+					<span>Aparelho fixo</span>
+				</div>
+				<div></div>
+				<div class="item-diferenca-1">
+					<div class="line-diferencas-1"></div>
+					<span>Aparelho fixo</span>
+				</div>
+				<div></div>
+				<div class="item-diferenca-1">
+					<div class="line-diferencas-1"></div>
+					<span>Aparelho fixo</span>
+				</div>
+				<div></div>
+				<div class="item-diferenca-1">
+					<div class="line-diferencas-1"></div>
+					<span>Aparelho fixo</span>
+				</div>
+			</div>
+
+			<div class="diferencas__single">
+				<img src="images/invisalign.jpg">
+
+				<div class="item-diferenca-2">	
+					<span>Aparelho fixo</span>
+				</div>
+
+				<div class="item-diferenca-2">
+					<span>Aparelho fixo</span>
+				</div>
+
+				<div class="item-diferenca-2">					
+					<span>Aparelho fixo</span>
+				</div>
+
+				<div class="item-diferenca-2">					
+					<span>Aparelho fixo</span>
+				</div>
+
+				<div class="item-diferenca-2">					
+					<span>Aparelho fixo</span>
+				</div>
+
+				<div class="item-diferenca-2">
+					<span>Aparelho fixo</span>
+				</div>
+			</div>
+			<div class="clear"></div><!--clear-->
+		</div>
+	</section><!--diferencas-->
+
+	<section class="contato">
+		<div class="container">
+			<h2>Entre em contato</h2>
+			<p>Telefone: (33)3333-3333
+			<br>E-mail: contato@monguilhott.com.br<br>
+			<br>Endereço: Avenida Rio Branco, 354 Edicício Maxim's 3 andar Sala 301 - Florianópolis/SC
+			</p>
+			<form>
+				<div class="form-group">					
+					<input placeholder="*Nome" type="text" name="nome" required>
+				</div>
+
+				<div class="form-group">					
+					<input placeholder="*E-mail" type="text" name="email" required>
+				</div>
+
+				<div class="form-group">					
+					<input placeholder="*Telefone" type="text" name="Telefone" required>
+				</div>
+
+				<div class="form-group">
+					<textarea placeholder="Opcional" name="mensagem"></textarea>
+				</div>
+				<div class="form-group">
+					<input type="submit" name="acao" value="Enviar!">
+				</div>
+			</form>
+		</div><!--container-->
+	</section><!--contato-->
+
+	<footer>
+		<div class="container">
+			<img src="images/logo.png">
+		</div><!--container-->
+	</footer>
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript">
-    	$('nav a').hover(function(){
+    	$('nav.desktop a').hover(function(){
     		$('nav li').removeClass('selected');
     		$(this).parent().addClass('selected');
     	})
+		$('nav.mobile h3').click(function(){
+			$('ul.nav-desktop').slideToggle();
+		})
     </script>
 </body>
 </html>
