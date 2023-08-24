@@ -118,11 +118,11 @@ div.telefone-header span{
 	padding-left: 30px;
 }
 
-.content.header{
+.content-header{
 	padding: 60px 0;
 }
 
-.content.header .one{
+.content-header .one{
 	float: left;
 	width: 50%;
 }
@@ -148,7 +148,7 @@ div.telefone-header span{
 	height: 40px;
 	margin: 10px 0;
 	border: 3px solid #ccc;
-	border-radius: 120px;
+	border-radius: 130px;
 	padding-left: 15px;
 }
 
@@ -431,6 +431,7 @@ section.contato h2{
 }
 
 section.contato p{
+	display: block;
 	border-bottom: 1px solid #509d87;
 	padding: 10px 0;
 	font-size: 14px;
